@@ -1,0 +1,267 @@
+/*
+Website Name: Bitcoin Theme
+Description: HTML5, CSS3, Materilize
+Author: Aarthy palanivelu
+*/
+/*-----------------------------------------------------------
+1. Default styling
+.  Media query
+#. ----------------------------------------------------------*/
+/*------------------
+ * Default styling
+ *------------------*/
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+body
+{
+  font-family 	 : Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  display 		 : flex;
+  min-height 	 : 100vh;
+  flex-direction : column;
+  position  	 : relative; 
+  background-color: #000;
+  color: #fff;
+}
+main
+{
+  flex 		 : 1 0 auto;
+}
+nav{
+	background: transparent;
+  padding: 0 1em;
+}
+nav li a:hover{
+	background : transparent; 
+}
+.btn,.btn:focus,.btn:active,.btn:visited{
+  background-color: #3e77da;
+  background-image: -moz-linear-gradient(90deg, #3e77da 0%, #00c3cc 100%);
+  background-image: -webkit-linear-gradient(90deg, #3e77da 0%, #00c3cc 100%);
+  background-image: -ms-linear-gradient(90deg, #3e77da 0%, #00c3cc 100%);
+  background-image: linear-gradient(90deg, #3e77da 0%, #00c3cc 100%);
+}
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background    : #00c0ff;
+  border-radius : 30px;
+}
+
+body::-webkit-scrollbar-track {
+  background        : #000;
+  border-radius     : 0px;
+  background-clip   : content-box;
+}
+.separator {
+    width: 20px;
+    height: 3px;
+    background-color: #00c0ff;
+    display: inline-block;
+}
+
+section.hero-main{
+  background-image : url("../images/bg.jpg");
+  background-size: cover;
+  background-position: top center;
+  height: 670px; 
+  background-attachment : fixed; 
+  position: relative;
+}
+section.hero-main .overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.2);
+}
+section.hero-main .header-content {
+    position: relative;
+    width: 100%;
+    padding: 100px 15px 50px 15px;
+    text-align: center;
+    z-index: 2;
+    color: #fff;
+    display: table;
+    height: 550px;
+    overflow: hidden;
+}
+section.hero-main .header-content .inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+section.hero-main .header-content .inner p{
+  max-width: 650px;
+  margin: auto;
+  line-height: 27px;
+  font-size: 15px;
+}
+section.hero-main  .btn-outer{
+  margin-top: 2em;
+}
+section.features-main, section.contact-us{
+  padding: 3em 0;
+}
+section.features-main  p.center-align{
+  max-width: 700px;
+  margin: 2em auto;
+  line-height : 25px; 
+}
+section.features-main .feature-box-otr{
+  margin: 3em 0;
+}
+section.features-main .feature-box-otr .feature-box{
+  margin: 1em 0 3em;
+}
+section.features-main .feature-box-otr .feature-box i{
+  color: #00c0ff;
+  font-size: 35px;
+}
+section.features-main .feature-box-otr .feature-box p.caption{
+      font-weight: 600;
+    font-size: 16px;
+}
+section.contact-us .separator-otr{
+  margin-bottom: 2em;
+}
+section.about-us .about-img{
+  margin-top: 5em;
+}
+section.about-us h3{
+  margin:0;
+}
+section.about-us {
+  padding-bottom: 2em;
+}
+section.about-us .about-goals p.flow-text{
+  background-color: #3e77da;
+  background-image: -moz-linear-gradient(90deg, #3e77da 0%, #00c3cc 100%);
+  background-image: -webkit-linear-gradient(90deg, #3e77da 0%, #00c3cc 100%);
+  background-image: -ms-linear-gradient(90deg, #3e77da 0%, #00c3cc 100%);
+  background-image: linear-gradient(90deg, #3e77da 0%, #00c3cc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  margin: 10px 0;
+  font-weight: 600;
+}
+.testimonal-inner{
+  padding: 3em 0 0;
+  display: inline-block;
+}
+.snip1568 {
+  position: relative;
+  display: inline-block;
+  margin: 10px 8px;
+  width: 100%;
+  color: #141414;
+  text-align: left;
+  font-size: 14px;
+  box-shadow: none !important;
+}
+
+
+.snip1568 .profile-image img {
+  border-radius: 5px;
+  max-width: 100%;
+  height: 80px;
+  vertical-align: top;
+  float: left;
+}
+
+.snip1568 figcaption {
+  width: 100%;
+  background-color: #131313;
+  color: #fff;
+  padding: 25px;
+  display: inline-block;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.snip1568 figcaption:after {
+  content: '';
+  position: absolute;
+  left: 32px;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #333333 transparent transparent transparent;
+}
+
+.snip1568 h3,
+.snip1568 h4,
+.snip1568 p {
+  margin: 0 0 5px;
+}
+
+.snip1568 h3 {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+
+.snip1568 p {
+  opacity: 0.9;
+}
+
+.snip1568 .icons {
+  padding: 20px 90px;
+}
+.snip1568 .icons a{
+  display: inline-block;
+  padding: 0 3px;
+}
+.snip1568 i {
+  padding: 10px 2px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: normal;
+  color: #ffffff;
+  opacity: 0.75;
+}
+
+.snip1568 i:hover {
+  opacity: 1;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+footer .footer-box.cu-list ul>li i{
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+}
+footer .footer-box.cu-list ul>li{
+  padding-left: 30px;
+  position: relative;
+}
+footer .footer-box.fu-list ul>li{
+  display: inline-block;
+  padding: 0 10px;
+}
+footer{
+  border-top: 1px solid #161515;
+    padding-top: 1em;
+}
+@media only screen and (min-width: 993px)
+{
+  .container {
+    width: 80%;
+  }
+  .contact-us .container{
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 992px){
+  .snip1568 .icons {
+    padding: 20px 19px;
+  }
+}
